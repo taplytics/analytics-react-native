@@ -9,8 +9,10 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
+import java.util.HashMap;
 import java.util.List;
 import com.segmentanalyticsreactnative.AnalyticsReactNativePackage;
+import com.taplytics.sdk.Taplytics;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -48,7 +50,9 @@ public class MainApplication extends Application implements ReactApplication {
     SoLoader.init(this, /* native exopackage */ false);
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager()); //// Remove this line if you don't want
                                                                              //// Flipper enabled
-
+    HashMap<String, Object> options = new HashMap<>();
+    options.put("logging", true);
+    Taplytics.startTaplytics(this, "YOUR TAPLYTICS SDK KEY);
   }
 
   /**

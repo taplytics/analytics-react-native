@@ -11,6 +11,8 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 #import "RNBootSplash.h"
+#import <Taplytics/Taplytics.h>
+
 @import AdSupport;
 @import React;
 @import segment_analytics_react_native;
@@ -25,6 +27,10 @@
                                             initialProperties:nil];
 
   rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
+
+  [Taplytics startTaplyticsAPIKey:@"YOUR TAPLYTICS SDK KEY" options:@{
+    TaplyticsOptionLogging: @YES
+  }];
 
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];

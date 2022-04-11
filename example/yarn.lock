@@ -1352,6 +1352,13 @@
   dependencies:
     merge-options "^3.0.4"
 
+"@react-native-async-storage/async-storage@^1.15.17":
+  version "1.17.3"
+  resolved "https://registry.yarnpkg.com/@react-native-async-storage/async-storage/-/async-storage-1.17.3.tgz#fa7010aa9b6a811ff653df3698a90d3c173dd6a6"
+  integrity sha512-2dxdlGwBjBP2qYu6F72U7cRRFshISYiNEWCaQNOJtxUERCMaYRWcniYqhL248KSbGUMpRhFCEtliztsiGoYYMA==
+  dependencies:
+    merge-options "^3.0.4"
+
 "@react-native-community/cli-debugger-ui@^6.0.0-rc.0":
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@react-native-community/cli-debugger-ui/-/cli-debugger-ui-6.0.0.tgz#ef9eb1268d85c1bd3caf2c4d36dc350bb080f254"
@@ -1575,6 +1582,17 @@
     color "^3.1.3"
     warn-once "^0.1.0"
 
+"@segment/analytics-react-native@^2.1.10":
+  version "2.1.10"
+  resolved "https://registry.yarnpkg.com/@segment/analytics-react-native/-/analytics-react-native-2.1.10.tgz#337715d4dd4c501532bfec2f8ec3f6bcbd0453a1"
+  integrity sha512-pL5zsOuxODFbDSZyl+Frw6uM6JBUdT07BtJOB8jlS6VDyRhujNwlTx/6zhsC9RvkWVo4LJW4z8Zqo6NG8lngMA==
+  dependencies:
+    "@react-native-async-storage/async-storage" "^1.15.17"
+    "@segment/sovran-react-native" "^0.2.6"
+    deepmerge "^4.2.2"
+    js-base64 "^3.7.2"
+    nanoid "^3.1.25"
+
 "@segment/sovran-react-native@^0.2.6":
   version "0.2.6"
   resolved "https://registry.yarnpkg.com/@segment/sovran-react-native/-/sovran-react-native-0.2.6.tgz#895ef37b71c299f56c89515cf8d200f13fce2251"
@@ -1615,6 +1633,14 @@
   integrity sha512-OAPJUAtgeINhh/TAlUID4QTs53Njm7xzddaVlEs/SXwgtiD1tW22zAB/W1wdqfrpmikgaWQ9Fw6Ws+hsiRm5Vg==
   dependencies:
     "@sinonjs/commons" "^1.7.0"
+
+"@taplytics/segment-react-native-plugin-taplytics@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@taplytics/segment-react-native-plugin-taplytics/-/segment-react-native-plugin-taplytics-0.0.2.tgz#606ddb13dc84ad32c533d8da78ab5037519f52a8"
+  integrity sha512-082hHY++jvNV0TEsjNZqdfP2QYIF3KzSRkvAZdwotbTSFSHK2Clss0YgRZOrHbk5JxUI0YWku5cV6+yrdjRgAQ==
+  dependencies:
+    "@segment/analytics-react-native" "^2.1.10"
+    taplytics-react-native "^3.0.0-rc.6"
 
 "@tootallnate/once@1":
   version "1.1.2"
@@ -4976,6 +5002,11 @@ jpeg-js@0.4.2:
   resolved "https://registry.yarnpkg.com/jpeg-js/-/jpeg-js-0.4.2.tgz#8b345b1ae4abde64c2da2fe67ea216a114ac279d"
   integrity sha512-+az2gi/hvex7eLTMTlbRLOhH6P6WFdk2ITI8HJsaH2VqYO0I594zXSYEP+tf4FW+8Cy68ScDXoAsQdyQanv3sw==
 
+js-base64@^3.7.2:
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-3.7.2.tgz#816d11d81a8aff241603d19ce5761e13e41d7745"
+  integrity sha512-NnRs6dsyqUXejqk/yv2aiXlAvOs56sLkX6nUdeaNezI5LFFLlsZjOThmwnrcwh5ZZRwZlCMnVAY3CvhIhoVEKQ==
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -5227,6 +5258,11 @@ locate-path@^5.0.0:
   integrity sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==
   dependencies:
     p-locate "^4.1.0"
+
+lodash.clonedeep@*:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
+  integrity sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=
 
 lodash.debounce@^4.0.8:
   version "4.0.8"
@@ -5759,6 +5795,11 @@ nanoid@^3.1.23:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.1.tgz#6347a18cac88af88f58af0b3594b723d5e99bb35"
   integrity sha512-n6Vs/3KGyxPQd6uO0eH4Bv0ojGSUvuLlIHtC3Y0kEO23YRge8H9x1GCzLn28YX0H66pMkxuaeESFq4tKISKwdw==
+
+nanoid@^3.1.25:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.2.tgz#c89622fafb4381cd221421c69ec58547a1eec557"
+  integrity sha512-CuHBogktKwpm5g2sRgv83jEy2ijFzBwMoYA60orPDR7ynsLijJDqgsi4RDGj3OJpy3Ieb+LYwiRmIOGyytgITA==
 
 nanomatch@^1.2.9:
   version "1.2.13"
@@ -7304,6 +7345,13 @@ tail@^2.0.0:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/tail/-/tail-2.2.4.tgz#90dd4c5a174a3fa39dcb65a1df1950a4a0093a41"
   integrity sha512-PX8klSxW1u3SdgDrDeewh5GNE+hkJ4h02JvHfV6YrHqWOVJ88nUdSQqtsUf/gWhgZlPAws3fiZ+F1f8euspcuQ==
+
+taplytics-react-native@^3.0.0-rc.6:
+  version "3.0.0-rc.6"
+  resolved "https://registry.yarnpkg.com/taplytics-react-native/-/taplytics-react-native-3.0.0-rc.6.tgz#de8b1a2e77f2e841545a4a12e80603dfe4ca7e38"
+  integrity sha512-PtB7JrmpY2CdXv8q+lAMNYqaOms05fqbRbc1TCZsIWQmMTyg0GFCJoj50odip9J18jG0YS6Zh7jB0Wd7r3SxoA==
+  dependencies:
+    lodash.clonedeep "*"
 
 telnet-client@1.2.8:
   version "1.2.8"

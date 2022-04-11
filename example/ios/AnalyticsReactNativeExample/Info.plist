@@ -32,6 +32,16 @@
 				<string>segmentreactnative</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.taplytics</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>YOUR TAPLYTICS URL SCHEME</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>

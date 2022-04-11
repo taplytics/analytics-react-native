@@ -212,6 +212,8 @@ dependencies {
     implementation project(':segmentanalyticsreactnative')
 
     androidTestImplementation('com.wix:detox:+')
+    
+    implementation 'com.taplytics.sdk:taplytics:+@aar'
 }
 
 // Run this once to be able to run the application with BUCK

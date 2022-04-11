@@ -4,3 +4,9 @@ include ':app'
 
 include ':segmentanalyticsreactnative'
 project(':segmentanalyticsreactnative').projectDir = new File(rootProject.projectDir, '../../packages/core/android')
+
+dependencyResolutionManagement {
+  repositories {
+    maven { url "https://github.com/taplytics/Taplytics-Android-SDK/raw/master/AndroidStudio/" }
+  }
+}
